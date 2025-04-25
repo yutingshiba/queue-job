@@ -17,7 +17,7 @@ public class JobWorker implements Runnable {
 
                 Thread.sleep(2000 + ThreadLocalRandom.current().nextInt(2000));
 
-                jobService.updateJob(jobId, JobStatus.DONE, "處理完成 ✅");
+                jobService.updateJob(jobId, JobStatus.DONE, "Finished processing.");
 
             } catch (Exception e) {
                 e.printStackTrace();
